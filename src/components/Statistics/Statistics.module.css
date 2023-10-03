@@ -1,0 +1,28 @@
+.statistics {
+  width: 250px;
+}
+.title {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  font-size: 40px;
+}
+.statlist {
+  display: inline;
+  list-style: none;
+
+  padding-inline-start: 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.label {
+  color: gray;
+  font-size: 12px;
+}
+.percentage {
+  font-size: 16px;
+}
