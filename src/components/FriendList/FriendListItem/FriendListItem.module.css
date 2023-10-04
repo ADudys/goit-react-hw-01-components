@@ -1,11 +1,18 @@
 .item {
   display: flex;
   flex-direction: row;
-  border-radius: 2%;
-  border-color: gray;
-  margin: 10px;
-  width: 250px;
+  border-radius: 5px;
+  border-color: gray solid;
+
+  width: 220px;
   align-items: center;
+  cursor: pointer;
+  padding: 7px;
+  margin: 8px;
+}
+.item:hover {
+  background-color: lightgray;
+  color: white;
 }
 
 .status {
@@ -17,9 +24,13 @@
 }
 .avatar {
   margin-right: 15px;
+  width: 35%;
+  border-radius: 50%;
+  border: 0.5px solid darkgray;
 }
 .name {
   color: darkgray;
+  font-size: 20px;
 }
 
 .true {

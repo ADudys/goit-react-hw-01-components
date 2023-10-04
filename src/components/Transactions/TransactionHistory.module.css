@@ -1,0 +1,19 @@
+.transactionhistory {
+  margin: 10px;
+  width: 250px;
+  align-items: center;
+  font-size: 18px;
+  border: 0.5px solid darkgray;
+  border-radius: 5px;
+}
+thead {
+  background-color: aqua;
+}
+
+tr {
+  text-align: center;
+  justify-content: space-around;
+}
+.cell {
+  border-radius: 5px;
+}

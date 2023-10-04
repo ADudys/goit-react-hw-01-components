@@ -2,22 +2,26 @@ import { PropTypes } from 'prop-types';
 import css from './TransactionHistory.module.css';
 
 export const TransactionHistory = ({ items }) => {
+  const randomHSLA = () => {
+    return `hsla(${~~(360 * Math.random())}, 70%,  72%, 0.8)`;
+  };
+
   return (
     <table className={css.transactionhistory}>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.cell}>Type</th>
+          <th className={css.cell}>Amount</th>
+          <th className={css.cell}>Currency</th>
         </tr>
       </thead>
 
       <tbody>
         {items.map(item => (
-          <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+          <tr style={{ backgroundColor: randomHSLA() }} key={item.id}>
+            <td className={css.cell}>{item.type}</td>
+            <td className={css.cell}>{item.amount}</td>
+            <td className={css.cell}>{item.currency}</td>
           </tr>
         ))}
       </tbody>
