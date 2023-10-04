@@ -11,18 +11,18 @@
   margin-top: 10px;
 }
 .description {
-  font-size: small;
+  font-size: 15px;
   margin: 0 auto;
   text-align: center;
   padding: 20px;
 }
 .profile .avatar {
-  width: 45%;
+  width: 60%;
   border-radius: 50%;
   border: 0.5px solid darkgray;
 }
 .profile .name {
-  font-size: medium;
+  font-size: 17px;
   font-weight: bold;
   color: rgb(0 0 0 / 80%);
 }
